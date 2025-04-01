@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 11 - HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo 11 HTML - Elemento tabela - uso de tags semânticas e de mesclagem</h1>
+    </header>
+    <main>
+        <section>
+            <p>Para criarmos tabelas em documentos html devemos usar a tag <strong>&lt;table&gt;</strong>, essa tag permite que possamos organizar nossos dados em linhas e colunas. Cada tabela é composta por uma estrutura de linhas, cabeçalho e colunas(células).
+            </p>
+
+            <p>Quando falamos em tags de tabelas que possuem valor semântico estamos falando das tags que vão ser interpretadas e utilizadas para indexar conteúdo tabular do documento HTML</p>
+            <p>TAGS <strong>&lt;thead&gt;</strong>, <strong>&lt;tbody&gt;</strong> e <strong>&lt;tfoot&gt;</strong> </p>
+                <p>
+                As tags seânticas listadas acima, são utlizadas para organizar melhor a tabela. Elas possuem valor semântico e vão auxiliar juntamento com as outras tags semânticas a indexação pelos navegadores.</p>
+        </section>
+        <section>
+            <h2>Exemplo de uso de tags de tabela semântico</h2>
+            <table border="1">
+                <caption>Relatório de vendas</caption>
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camiseta</td>
+                        <td>100</td>
+                        <td>R$ 200,00</td>
+                    </tr>
+                    <tr>
+                        <td>Calças</td>
+                        <td>500</td>
+                        <td>R$ 300,00</td>
+                    </tr>
+                    <tr>
+                        <td>Short</td>
+                        <td>50</td>
+                        <td>R$ 80,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sapatos</td>
+                        <td>80</td>
+                        <td>R$ 380,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>R$ 960,00</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+    </main>
+</body>
+</html>

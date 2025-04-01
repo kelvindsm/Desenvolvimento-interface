@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 17 - HTML</title>
+</head>
+<body>
+    <form action="paginadestino.aspx" method="get">
+        <h1>Formulário</h1>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="">Nome:</label>
+                <input type="text" name="txtNome" id="txtNome" required>
+            </div>
+            <div>
+                <label for="">Endereço:</label>
+                <input type="text" name="txtEndereco" id="txtEndereco">
+            </div>
+            <div>
+                <label for="">Cidade:</label>
+                <input type="Cidade" name="txtCidade" id="txtCidade">
+            </div>
+            <div>
+                <label for="">Estado:</label>
+                <select name="chkEstado" id="chkEstado">
+                    <option value="1">Distrito Federal</option>
+                    <option value="2">Goias</option>
+                    <option value="3">Minas Gerais</option>
+                    <option value="4">Pará</option>
+                </select>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <div>
+                <label for="">Natureza do cargo</label> <br>
+                <input type="radio" name="cargo" id="rdCargo"> Gerencia
+                <input type="radio" name="cargo" id="rdCargo"> Financeiro
+                <input type="radio" name="cargo" id="rdCargo"> Recepção
+                <input type="radio" name="cargo" id="rdCargo"> Administrativo
+                <input type="radio" name="cargo" id="rdCargo"> Juridico
+            </div>
+            <br>
+            <div>
+                <label for="">Área de interesse</label> <br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="1"> Computação 
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="2"> Biologia 
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="3"> Meio Ambiente
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="4"> Engenharia
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="5"> História
+            </div>
+            <br>
+            <div>
+                <label for="">Mini-curriculo</label>
+                <textarea name="txtCurriculo" id="txtCurriculo" cols="60" row="100"></textarea>
+            </div>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="submit">Limpar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 20 - Formulários</title>
+</head>
+
+<body>
+    <form action="paginaDestino">
+        <h1>Exemplo 20 - Exercicio</h1>
+        <fieldset>
+            <legend>Pedido</legend>
+            <br>
+            <div>
+                <label for="">ID:</label> <br>
+                <select name="cboPedido" id="cboPedido">
+                    <option value="1">pedido 1</option>
+                    <option value="2">Pedido 2</option>
+                    <option value="3">Pedido 3</option>
+                    <option value="4">Pedido 4</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Data do pedido</label> <br>
+                <input type="date" name="txtDataPedido" id="txtDataPedido" required>
+            </div>
+            <br>
+            <div>
+                <label for="">ID Funcionario:</label> <br>
+                <select name="cboFuncionario" id="cboFuncionario">
+                    <option value="1">Alex</option>
+                    <option value="2">Bruno</option>
+                    <option value="3">Camila</option>
+                    <option value="4">Danielle</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">ID Cliente:</label> <br>
+                <select name="cboCliente" id="cboCliente">
+                    <option value="1">Emanuel</option>
+                    <option value="2">Fabiana</option>
+                    <option value="3">Gabriela</option>
+                    <option value="4">Hugo</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Valor total</label> <br>
+                <input type="text" name="txtValor" id="itxtValor" placeholder="0,00">
+            </div>
+            <br>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="">Pedidos Cadastrados</label>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Funcionario</th>
+                            <th>Cliente</th>
+                            <th>Data da compra</th>
+                            <th>Valor do pedido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0001</td>
+                            <td>Alex</td>
+                            <td>Emanuel</td>
+                            <td>01/01/2025</td>
+                            <td>R$ 600,000</td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Bruno</td>
+                            <td>Fabiana</td>
+                            <td>01/01/2025</td>
+                            <td>R$ 400,000</td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Camila</td>
+                            <td>Gabriela</td>
+                            <td>01/01/2025</td>
+                            <td>R$ 300,000</td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Danielle</td>
+                            <td>Hugo</td>
+                            <td>01/01/2025</td>
+                            <td>R$ 200,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <button type="submit">Registrar valor</button>
+                <button type="submit">Listar vendas</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
